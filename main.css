@@ -1,0 +1,275 @@
+<meta name="viewport" content="width=device-width, initial-scale=1"/> 
+<title>Jevon Mahoney</title>
+ 
+		<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+		 a, ul, li {
+            -o-transition:.5s;
+            -ms-transition:.5s;
+            -moz-transition:.5s;
+            -webkit-transition:.5s;
+        }
+
+		body {
+			background-color: #fff;
+			font-family: Tahoma, Verdana, Segoe, sans-serif;
+			overflow: scroll;
+			letter-spacing: 2px;
+      font-size: 8px;
+      transition-property: all;
+      transition-duration: .5s;
+		}
+
+.slider {
+	overflow-y: hidden;
+	max-height: 500px; /* approximate max height */
+	transition-property: all;
+	transition-duration: .5s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+.slider.closed {
+	max-height: 0;
+}
+
+div.postbg{
+  width: 100%;
+  background-color: #000;
+}
+
+div .texta{
+	margin-bottom: 30px;
+	text-align: left;
+	background-color: #000;
+	color: #fff;
+  width: 100%;
+  transition-property: all;
+  transition-duration: .5s;
+}
+
+      div.postarea {
+      position: absolute;
+      height: 100%;
+      min-height: 100%;
+      width: 80%;
+      bottom: 0;
+      max-width: 500px;
+      background-color: #000;
+      text-align: left;
+      font-size: 2em;
+      font-weight: bold;
+      border-left: solid 28pt #000;
+      border-right: none;
+      border-bottom: solid 0pt #000;
+    }
+
+		  div.postarea img{
+			max-width: 100%;
+			width: auto;
+		}
+
+      div.postarea2 {
+      position: inherit;
+      margin-left: 0px;
+      margin-top: -20pt;
+      width: 100%;
+      max-width: 250px;
+      height: 100%;
+      background-color: #fff;
+      text-align: left;
+      border-style: solid;
+      border-color: #000;
+      border-left: solid 28pt #000;
+      border-right: none;
+      border-bottom: solid 0pt #000;
+      
+    }
+
+  .postarea2 a {
+  color: #000;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  background-color: #fff;
+  line-height: 250%;
+  transition-property: all;
+  transition-duration: .5s;
+}
+
+.postarea2 a:hover{
+cursor: default;
+border-left: solid 26pt #000;
+      transition-property: all;
+      transition-duration: .5s;
+}
+
+/*
+SLIDER
+*/
+
+* {
+  margin:0;
+  padding:0;
+  letter-spacing:3px;
+}
+
+.message {
+background:#fff;
+color:#000;
+position: fixed;
+top: -100%;
+left: 0;
+width: 100%;
+
+height: 100%;
+transition: top 300ms cubic-bezier(0.17, 0.04,0.03, 0.94);
+overflow: hidden;
+box-sizing: border-box;
+text-align: left;
+z-index: 2;
+border-left: solid 28pt #000;
+}
+
+.message h1 {
+  color:#000;
+}
+
+#toggle {
+  position:absolute;
+  appearance:none;
+  cursor:pointer;
+  left:-100%;
+  top:-100%;
+}
+
+#toggle + label {
+  padding-top: 6pt;
+  position:fixed;
+  background: #000;
+  width: 100%;
+  color: #FFF;
+  font-weight: bold;
+  text-align:left;
+  -webkit-font-smoothing: antialiased;
+  transition:all 200ms ease;
+  z-index: 2;
+  float: right;
+  height: 20pt;
+  cursor: default;
+  border-left: solid 28pt #000;
+}
+
+#toggle + label:hover{
+  cursor: default;
+  padding-left: 26pt;
+}
+
+#toggle + label:after {
+    font-weight: bold;
+    content:"+";
+    font-size: 2em;
+    cursor: default;
+}
+
+.container {
+transition: margin 300ms cubic-bezier(0, 0, 0 , 0);
+height: 36px;
+}
+
+#toggle:checked ~ .message {
+  top: 0;
+}
+
+#toggle:checked ~ .container {
+}
+
+#toggle:checked + label {
+  background:#000;
+  color: #fff;
+  transition: 200ms;
+  z-index: 3;
+  cursor: default;
+}
+
+#toggle:checked + label:after {
+  content:"-"
+}
+
+.innermessage{
+  position: absolute;
+  margin-top: 26pt;
+  width: 50%;
+  max-height: 100%;
+  overflow: scroll;
+  background-color: #fff;
+  font-size: 2em;
+  font-weight: bold;
+  color: #000;
+  transition-property: all;
+  transition-duration: .5s;
+}
+
+.innermessage a {
+  color: #000;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  background-color: #fff;
+  line-height: 250%;
+  cursor: default;
+  transition-property: all;
+  transition-duration: .5s;
+}
+
+.innermessage a:hover{
+  border-left: solid 28pt #000;
+  transition-property: all;
+  transition-duration: .5s;
+}
+
+.imageplace{
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 10px;
+  left:0;
+  right: 0;
+}
+
+		/*END OF CONTENT - - - - - - - - - - - - - - */ 
+
+@media all and (max-width: 980px) {
+
+		body {
+			background-color: #fff;
+			font-family: Tahoma, Verdana, Segoe, sans-serif;
+			overflow: scroll;
+			letter-spacing: 2px;
+			font-size: 8px;
+		}
+
+
+.popup .content {
+	font-size: 8px;
+}
+
+}
+
+		li > a:after { content:  ' +'; }
+		li > a:only-child:after { content: ''; }
+
+		div#content img {
+			width: 100%;
+			height: relative;
+		}
+
+		div#content img.smaller {
+			width: 176px;
+			height: 193px;
+		}
+
+		
+		</style>
